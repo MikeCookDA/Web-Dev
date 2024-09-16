@@ -1,0 +1,119 @@
+<!-- Wanted to put together cheatsheet summarizing the key HTML elements, attributes, and their purposes just for future use, both myself and others as I believe it's always good to be able to look back on things for guidance, whether you know the information by hear or not. -->
+
+HTML Basics Cheat Sheet
+
+1. HTML Structure
+  <!DOCTYPE html>: Declares the document as HTML5.
+  <html lang="en">: Root element of the page. The lang attribute specifies the language.
+  <head>: Contains metadata, like the title and character encoding.
+    <meta charset="utf-8">: Specifies the character encoding.
+    <title>: Sets the title displayed in the browser tab.
+  <body>: Contains all visible content on the page.
+
+2. Headings
+  <h1> to <h6>: Heading elements.
+    <h1>: Most important heading (only one per page).
+    <h2> to <h6>: Subheadings of decreasing importance.
+
+3. Paragraph
+  <p>: Creates a paragraph of text.
+
+4. Comments
+  <!-- comment text -->: Comments in HTML, not visible in the browser.
+
+5. Main Sectioning Elements
+  <main>: Wraps the main content of the webpage.
+  <section>: Defines sections within a document for better organization and accessibility.
+
+6. Links and Anchors
+  <a href="url">link text</a>: Creates a hyperlink.
+    href: The URL the link points to.
+    target="_blank": Opens the link in a new tab.
+
+7. Images
+  <img src="image-url" alt="image description">: Adds an image to the page.
+    src: URL of the image.
+    alt: Description of the image for accessibility.
+
+8. Lists
+  Unordered List (Bullets):
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+
+Ordered List (Numbers):
+    <ol>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ol>
+
+9. Figures and Captions
+<figure>: Groups images and captions together.
+
+  <figure>
+    <img src="image-url" alt="A description">
+    <figcaption>Image caption</figcaption>
+  </figure>
+
+10. Emphasis and Importance
+  <em>: Emphasizes text, usually italicized.
+  <strong>: Indicates important text, usually bold.
+
+11. Forms
+  <form action="url">: Collects user input.
+
+ action: URL to send the form data to.
+
+  Text Input Field:
+    <input type="text" name="input-name" placeholder="hint text" required>
+
+   type="text": Defines a text input.
+   name: The data field for the input.
+   placeholder: Hint text inside the field.
+   required: Ensures the field must be filled in before submission.
+
+Button:
+  <button type="submit">Submit</button>
+
+type="submit": Submits the form.
+
+Radio Buttons:
+    <fieldset>
+    <legend>Question</legend>
+    <label for="option1">
+      <input id="option1" type="radio" name="options" value="option1" checked> Option 1
+    </label>
+    <label for="option2">
+      <input id="option2" type="radio" name="options" value="option2"> Option 2
+    </label>
+  </fieldset>
+
+name: Groups radio buttons so only one can be selected.
+checked: Pre-selects a radio button.
+
+Checkboxes:
+  <input type="checkbox" id="option1" name="group" value="option1">
+  <label for="option1">Option 1</label>
+
+12. Footer
+<footer>: Defines the footer of the page.
+
+  <footer>
+    <p>No Copyright - freeCodeCamp.org</p>
+  </footer>
+
+Best Practices:
+  Nesting: Always properly nest elements (e.g., headers inside sections).
+  Indentation: Use two spaces to indent nested elements for readability.
+  Accessibility: Use alt for images, for in labels, when needed
+
+
+
+
+
+
+
+
